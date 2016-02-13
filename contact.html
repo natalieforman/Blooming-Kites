@@ -1,0 +1,288 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Blooming Kites - Contact</title>
+  <meta name="The Washington DC Kite Festival" content="">
+  <meta name="Natalie Forman" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/angular.css"> <!-- extend and add styles in this document only -->
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <!-- Responsie nav styles ================= -->
+  <link rel="stylesheet" href="css/nav/responsive-nav.css"><!-- nav behavior -->
+  <link rel="stylesheet" href="css/nav/styles.css"><!-- nav appearance -->
+
+  <!-- Responsive nav JavaScript Plugin file ================= -->
+  <script src="js/nav/responsive-nav.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+  <script src="http://maps.google.com/maps/api/js?sensor=false&libraries=geometry&v=3.7"></script>
+  <script src="js/maplace.min.js"></script>
+
+  <script>
+      $(document).ready(function() {
+      
+      new Maplace({
+       show_markers: true,
+
+        /*This method disables mouse scroll */
+        listeners: {
+        mouseover: function(map, event) {
+            map.setOptions({scrollwheel: false });
+            }
+        },
+        /*End disable mouse scroll */
+       locations: [{
+            lat: 38.8894658,  
+            lon: -77.0352305,
+            zoom: 16,
+        }]
+        
+      }).Load(); /* end new Maplace */
+
+      $(window).scroll(function() {
+      $('.right').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+550) {
+            $(this).addClass("slideRight");
+        }
+       });
+
+      $('.left').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+550) {
+            $(this).addClass("slideLeft");
+        }
+       });
+      });
+      });/*end function*/
+  </script>
+
+</head>
+
+<!-- BODY ================= -->
+<body>
+<div class="wrapper wrapper-header contact-gradient">
+  <div class="container">
+    <div class="row navigation">
+      <div class="twelve columns green">
+        <a href="index.html" class="logo">
+        <img src="images/blossom.svg" alt="logo">
+      </a>
+      <nav class="nav-collapse"><ul>
+        <li><a href="fly.html">Fly</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html" class="onpage">Contact</a></li>
+      </ul></nav>
+    </div>
+  </div>
+    <div class="row">
+      <div class="four columns second_title">
+        <h1>Contact</h1>
+      </div>
+    </div>
+  </div>
+</div> <!--close wrapper header-->
+<div class = "wrapper schedule-plan">
+  <div class="container">
+    <div class="row location">
+      <div class="twelve columns">
+        <h3>Location:</h3>
+        <hr class="border"/>
+        <div><img src="images/location.svg" class="locationicon" alt="icon"><div class="locationtext">
+        <h5>Washington Monument Grounds</h5><h6> Constitution Avenue & 17th Street, NW</h6></div></div>
+      </div>
+    </div>
+</div>
+</div>
+<div class="wrapper" id="gmap">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+      </div>
+    </div>
+</div>
+</div><!--gmap-->
+<div class = "wrapper wrapper-sponsors white">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3>Directions</h3>
+        <hr class="border2"/>
+      </div>
+    </div>
+    <div class="row transportation">
+      <div class="four columns carm">
+        <img class="transport_img right" src="images/car.svg" alt="logo">
+        <div class="left">
+        <h4>Parking</h4>
+        <ul class="metro">
+        <li><p>Please park at <a href="http://tinyurl.com/qe94y2m" target="_blank">Hains Point</a></p></li>
+        <li><p>Take Rock Creek and Potomac Pkwy NW to Ohio Dr SW.</p></li>
+        <li><p>Continue onto Independence Ave SW and The lot will be on your right.</p></li>
+        <li><p>A shuttle will run between Hains Point and the Tidal Basin.</p></li>
+        </ul>
+        <a href="http://tinyurl.com/qe94y2m" target="_blank"><div class="transport_button hvr-fade3">Hains Point</div></a></div>
+      </div>
+      <hr class="border5"/>
+      <div class="four columns carm">
+        <img class="transport_img right" src="images/metro.svg" alt="logo">
+        <div class="left">
+        <h4>Metro</h4>
+        <ul class="metro">
+          <li><p>Take the <span class="orange">Orange</span> or <span class="blue">Blue</span> metro lines.</p></li>
+          <li><p>The closest metro station to the Washington Monument is the Smithsonian metro station</p></li>
+          <li><p>Head north towards Jefferson Dr. SW</p></li>
+          <li><p>Turn left onto Jefferson Dr. SW</p></li>
+        </ul>
+        <a href="https://www.wmata.com/" target="_blank"><div class="transport_button hvr-fade3">WMATA</div></a></div>
+      </div>
+      <hr class="border5"/>
+      <div class="four columns carm">
+        <img class="transport_img right" src="images/bike.svg" alt="logo">
+        <div class="left">
+        <h4>Biking</h4>
+        <ul class="metro">
+        <li><p><a href="https://www.capitalbikeshare.com/" target="_blank">Capital Bikeshare</a> will be operating bike share stations.</p></li>
+        <li><p>The closest bike rack is along Jefferson Dr. SW between 14th and 15th Sreets SW.</p></li>
+        <li><p>There will be extra bike racks at Independence Avenue &amp; 15th St., SW,.</p></li>
+      </ul>
+        <a href="https://www.capitalbikeshare.com/" target="_blank"><div class="transport_button hvr-fade3">Bikeshare</div></a></div></div>
+      </div>
+    </div>
+</div>
+<div class="wrapper light touch contact-footer">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+        <h3>Get in Touch</h3>
+        <hr class="border2"/>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns">
+        <p>Let us know if you have any questions or requests, concerning our event.
+        We will respond to you as soon as we can.</p>
+        <div class="ci">
+        <img class="contact_icon" src="images/phone.svg" alt="phone icon">
+        <p>877.32.KITES</p></div>
+        <div class="ci">
+        <img class="contact_icon" src="images/mail.svg" alt="email icon">
+        <a href="mailto:bloomingkites@american.edu"><p>bloomingkites@gmail.com</p></a></div>
+      </div>
+      <div class="five columns offset-by-one" id="contactus">
+        <form>
+          <div class="form-head"><p>Contact Us</p></div>
+          <p>Name:</p><br>
+          <input type="text" name="firstname">
+          <br>
+          <p>Email:</p><br>
+          <input type="text" name="firstname">
+          <br>
+          <p>Subject:</p><br>
+          <input type="text" name="lastname">
+          <br>
+          <p>Comments:</p><br>
+          <textarea class="questions" rows="5">
+          </textarea>
+          <br>
+          <a href="contact.html" class="submit hvr-fade2">Submit</a>
+        </form>
+      </div>
+</div>
+</div>
+</div>
+<div class="wrapper footer_border">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper wrapper-footer">
+  <div class="container footer">
+    <div class="row">
+        <div class="three columns bottom_nav">
+          <h2>Learn about us</h2>
+          <ul>
+          <li><a href="index.html"><p>Home</p></a></li>
+          <li><a href="faq.html"><p>FAQ</p></a></li>
+          <li><a href="contact.html"><p>Contact</p></a></li>
+          </ul>
+        </div>
+        <div class="three columns bottom_nav">
+          <h2>Join us</h2>
+          <ul>
+          <li><a href="fly.html"><p>Fly</p></a></li>
+          <li><a href="schedule.html"><p>Schedule</p></a></li>
+          </ul>
+        </div>
+        <div class="three columns">
+          <h2>Connect with us</h2>
+          <ul>
+          <li><p class="phone">877.32.KITES</p></li>
+          <li><a href="#"><p>bloomingkites@gmail.com</p></a></li>
+        </ul>
+        </div>
+      <div class="three columns">
+        <div class="media">
+          <a class="follow_fb" href="https://facebook.com" target="_blank"></a>
+          <a class="follow_twit" href="https://twitter.com" target="_blank"></a>
+        </div>
+        </div>
+     </div>
+  </div>
+</div>
+
+<!-- Call plugin function to activate responsive nav ================= -->
+<script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+</script><!-- end pugin call -->
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

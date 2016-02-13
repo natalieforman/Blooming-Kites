@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Blooming Kites</title>
+  <meta name="The Washington DC Kite Festival" content="">
+  <meta name="Natalie Forman" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/angular.css"> <!-- extend and add styles in this document only -->
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <!-- Responsie nav styles ================= -->
+  <link rel="stylesheet" href="css/nav/responsive-nav.css"><!-- nav behavior -->
+  <link rel="stylesheet" href="css/nav/styles.css"><!-- nav appearance -->
+
+  <!-- Responsive nav JavaScript Plugin file ================= -->
+  <script src="js/nav/responsive-nav.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+  <!-- Slider================= -->
+  <!--http://www.owlgraphic.com/owlcarousel/#how-to-->
+  <!-- Important Owl stylesheet -->
+  <link rel="stylesheet" href="css/owl.carousel.css">
+  <!-- Default Theme -->
+  <link rel="stylesheet" href="css/owl.theme.css">
+  <!-- Include js plugin -->
+  <script src="js/owl.carousel.js"></script>
+  <script>
+    $(document).ready(function() {
+     
+     $("#owl-demo").owlCarousel({
+ 
+        navigation : true, // Show next and prev buttons
+        slideSpeed : 300,
+        paginationSpeed : 400,
+        singleItem:true,
+        navigation: false,
+        autoPlay: 5000
+         
+        // "singleItem:true" is a shortcut for:
+        // items : 1,
+        // itemsDesktop : false,
+        // itemsDesktopSmall : false,
+        // itemsTablet: false,
+        // itemsMobile : false
+         
+        });
+
+     //$(".kite").addClass("tossing");
+
+     <!--http://www.justinaguilar.com/animations/-->
+    $(window).scroll(function() {
+
+      $('.slide_left').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+650) {
+            $(this).addClass("slideLeft");
+        }
+      }); 
+
+      $('.slide_right').each(function(){
+        var imagePos = $(this).offset().top;
+
+        var topOfWindow = $(window).scrollTop();
+          if (imagePos < topOfWindow+650) {
+            $(this).addClass("slideRight");
+        }
+      });   
+    });
+  });
+  </script>
+</head>
+
+<!-- BODY ================= -->
+<body>
+<!--http://snapsvg.io/-->
+<div class="wrapper wrapper-header gradient">
+  <div class="container">
+    <div class="row navigation">
+      <div class="twelve columns green">
+        <a href="index.html" class="logo">
+        <img src="images/blossom.svg" alt="logo">
+      </a>
+      <nav class="nav-collapse"><ul>
+        <li><a href="fly.html">Fly</a></li>
+        <li><a href="schedule.html">Schedule</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
+    </div>
+  </div>
+    <div class="row title">
+      <div class="eight columns offset-by-two">
+        <h1>Blooming Kites</h1>
+      </div>
+    </div>
+    <div class="row">
+      <div class="six columns offset-by-three tagline">
+        <h5>Join the fun as thousands of kites fly over our nation’s capitol</h5>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns offset-by-four date">
+        <h5>April 12th, 2015</h5>
+        <h6>Washington, DC</h6>
+      </div>
+    </div>
+    <div class="row fly">
+      <div class="six columns offset-by-three">
+        <a class="fly_button hvr-fade1" href="fly.html">Fly</a>
+      </div>
+    </div>
+  </div>
+</div> <!--close wrapper header-->
+
+<div class = "wrapper wrapper-about">
+  <!--about-->
+  <div class="container about">
+    <div class="row subtitle">
+      <div class="three columns">
+        <h3>About</h3>
+      </div>
+    </div>
+    <hr class="border"/>
+    <div class="row">
+      <div class="twelve columns about_block">
+        <p>Kite fliers of all ages from across the United States and the world gather to fly handmade kites and compete for prizes during this colorful event.</p>
+      </div>
+    </div>
+    <div class="row">
+      <div class="four columns">
+        <p>See the creativity of kite makers and skill of kite fliers from across the US and internationally through competitions and demonstrations. Events include the popular Hot Tricks Showdown and the Rokkaku Battle!</p>
+      </div>
+      <div class="four columns">
+        <p>Open kite flying is welcome on the Public Field. Bring your own kite, or children can make a kite to fly at an activity station (while supplies last).</p>
+      </div>
+      <div class="four columns">
+        <p>We have two fields. One for everyone to try their hand at kite flying and the other for the professionals. Watch both as kites take to the sky.</p>
+      </div>
+    </div>
+      <div class="row">
+        <div class="twelve columns">
+          <a href="schedule.html" class="see-schedule hvr-fade2">See Schedule</a>
+        </div>
+      </div>
+      </div>
+    </div>
+  <div class = "wrapper wrapper-quotes">
+  <div class="container">
+    <div class="row bloom1">
+      <div class="ten columns offset-by-one about-block">
+      <div id="owl-demo" class="owl-carousel owl-theme">  
+        <div class="item"><blockquote><p>"The sight of so many kites flying on the Mall from the Monument to the Capitol is one of the best sights in DC during the beginning of spring and the start of the Cherry Blossom Festival"</p><h5>-Washington Post, </h5><h6>May 2014</h6></blockquote></div>
+        <div class="item"><blockquote><p>"This event will certainly bring out the kid in you no matter how old you are!"</p><h5>-Yelp, </h5><h6>May 2014</h6></blockquote></div>
+        <div class="item"><blockquote><p>"The highlight of my spring! It's amazing to see the kites fly right around our nation's capital. A unique experience you can't get anywhere else. This is how I know that the summer is near!"</p><h5>-Bloomberg News, </h5><h6>May 2014</h6></blockquote></div>
+      </div>
+      </div>
+    </div>
+  </div><!--close about-->
+</div>
+<div class = "wrapper wrapper-sponsors">
+    <div class="container"><!--sponsors-->
+    <div class="row">
+      <div class="three columns">
+        <h3>Sponsors</h3>
+      </div>
+    </div>
+    <hr class="border2"/>
+    <div class="row">
+      <div class="six columns slide_right">
+        <a href="http://kite.org/" target="_blank"><img class="sponsor_img" src="images/cka2.svg" alt="logo"></a>
+        <h4>Continental Kitefliers Association</h4>
+        <p>Founded in 1970, the Continental Kitefliers Association has thousands of members in 20 countries, making it the largest association of kite fliers and kite clubs in the world. Our purpose is to educate the public in the art, history, technology, and practice of building and flying kites - to advance the joys and values of kiting in all nations.</p>
+      </div>
+      <div class="six columns slide_left">
+        <a href="http://wowkiteclub.com/" target="_blank"><img class="sponsor_img" src="images/wow2.svg" alt="logo"></a>
+        <h4>Washington Kite Club</h4>
+        <p>We are based in Metropolitan Washington DC.  Over the years we have established ourselves as one of the premier kite clubs on the east coast, if not in the country. We welcome anyone who is interested in kiting to join us!  For young and old, there is nothing more peaceful than flying a kite on a warm sunny day! </p>
+      </div>
+    </div>
+  </div><!--sponsors-->
+</div>
+<div class="wrapper wrapper-history">
+  <div class="container"><!--history-->
+    <div class="row">
+      <div class="three columns">
+        <h3>History</h3>
+      </div>
+    </div>
+    <hr class="border2"/>
+    <div class="row">
+      <div class="four columns">
+        <h4>1967</h4>
+        <p>The festival was founded by aviation pioneer <em>Paul E. Garber</em>, also founder of the National Air and Space Museum (NASM).</p>
+        <h4>2010</h4>
+        <p>The Smithsonian Associates, the cultural, educational, and membership division of the Smithsonian Institution first organized and sponsored the festival.</p>
+      </div>
+      <div class="four columns">
+        <h4>2011</h4><p>The National Cherry Blossom Festival, Inc., began producing the festival and renamed the event to the "Blossom Kite Festival".</p>
+        <h4>Now</h4>
+        <p> The festival continues every year and continues to grow as publicity and word of mouth spread the news of the wonder of the kite festival.</p>
+      </div>
+      <div class="four columns paul">
+        <!--<img src="images/paul.png" alt="Paul E. Garber - Founder of the Kite Festival">-->
+        <img class="tree" src="images/tree.svg" alt="Cherry Tree">
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="wrapper footer_border">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper wrapper-footer">
+  <div class="container footer">
+    <div class="row">
+        <div class="three columns bottom_nav">
+          <h2>Learn about us</h2>
+          <ul>
+          <li><a href="index.html"><p>Home</p></a></li>
+          <li><a href="faq.html"><p>FAQ</p></a></li>
+          <li><a href="contact.html"><p>Contact</p></a></li>
+          </ul>
+        </div>
+        <div class="three columns bottom_nav">
+          <h2>Join us</h2>
+          <ul>
+          <li><a href="fly.html"><p>Fly</p></a></li>
+          <li><a href="schedule.html"><p>Schedule</p></a></li>
+          </ul>
+        </div>
+        <div class="three columns">
+          <h2>Connect with us</h2>
+          <ul>
+          <li><p class="phone">877.32.KITES</p></li>
+          <li><a href="#"><p>bloomingkites@gmail.com</p></a></li>
+        </ul>
+      </div>
+      <div class="three columns">
+        <div class="media">
+          <a class="follow_fb" href="https://facebook.com" target="_blank"></a>
+          <a class="follow_twit" href="https://twitter.com" target="_blank"></a>
+        </div>
+        </div>
+     </div>
+  </div>
+</div>
+
+<!-- Call plugin function to activate responsive nav ================= -->
+<script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+</script><!-- end pugin call -->
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>

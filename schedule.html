@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+  <!-- Basic Page Needs
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta charset="utf-8">
+  <title>Blooming Kites - Schedule</title>
+  <meta name="The Washington DC Kite Festival" content="">
+  <meta name="Natalie Forman" content="">
+
+  <!-- Mobile Specific Metas
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <!-- FONT
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link href="//fonts.googleapis.com/css?family=Raleway:400,300,600" rel="stylesheet" type="text/css">
+
+  <!-- CSS
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/skeleton.css">
+  <link rel="stylesheet" href="css/custom.css">
+  <link rel="stylesheet" href="css/hover.css">
+  <link rel="stylesheet" href="css/angular.css"> <!-- extend and add styles in this document only -->
+
+
+  <!-- Favicon
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+  <link rel="icon" type="image/png" href="images/favicon.ico">
+
+  <!-- Responsie nav styles ================= -->
+  <link rel="stylesheet" href="css/nav/responsive-nav.css"><!-- nav behavior -->
+  <link rel="stylesheet" href="css/nav/styles.css"><!-- nav appearance -->
+
+  <!-- Responsive nav JavaScript Plugin file ================= -->
+  <script src="js/nav/responsive-nav.js"></script>
+
+  <script src="http://code.jquery.com/jquery-1.11.2.min.js"></script>
+  <script>window.jQuery || document.write('<script src="js/jquery.min.js"><\/script>')</script>
+
+  <script>
+    $(document).ready(function() {
+
+      $('.s-description').each(function(){
+            $(this).addClass("slideLeft");
+      }); 
+
+      $('.s-title').each(function(){
+            $(this).addClass("slideRight");
+      }); 
+      $('.s-time').each(function(){
+            $(this).addClass("slideRight");
+      }); 
+
+    //toggle the componenet with class msg_body
+    jQuery(".heading").click(function()
+    {
+      jQuery(this).next(".expand").slideToggle(500);
+    });
+  });
+  </script>
+
+</head>
+
+<!-- BODY ================= -->
+<body>
+<div class="wrapper wrapper-header schedule-gradient">
+  <div class="container">
+    <div class="row navigation">
+      <div class="twelve columns green">
+        <a href="index.html" class="logo">
+        <img src="images/blossom.svg" alt="logo">
+      </a>
+      <nav class="nav-collapse"><ul>
+        <li><a href="fly.html">Fly</a></li>
+        <li><a href="schedule.html" class="onpage">Schedule</a></li>
+        <li><a href="faq.html">FAQ</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul></nav>
+    </div>
+  </div>
+    <div class="row">
+      <div class="four columns second_title">
+        <h1>Schedule</h1>
+      </div>
+    </div>
+  </div>
+</div> <!--close wrapper header-->
+
+<div class = "wrapper schedule-plan schedule-back">
+  <!--about-->
+  <div class="container">
+    <div class="row schedule-subtitle">
+      <div class="twelve columns">
+        <h4 class="sched">April 12th, 2015: 10am-5pm</h4>
+      </div>
+    </div>
+    <!--<div class="row">
+      <div class="twelve columns">
+        <p class="heading">Header-1 </p>
+        <div class="expand">Lorem ipsum dolor sit amet, consectetuer adipiscing elit orem ipsum dolor sit amet, consectetuer adipiscing elit</div>
+      </div>
+    </div>-->
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">10:30am</div><div class="ball"></div><div class="timel">11:00am</div></div>
+      <div class="four columns s-title competition"><h4>Kite Ballets & Demonstrations</h4>
+      <h5><img class="s-icon" src="images/competition.svg" alt="icon">Competition Field</h5></div>
+      <div class="six columns s-description "><p class="heading">Description &#9660;</p><div class="expand">One of the main components of a kite competition is the ballet, where the kite or kites are used to interpret a piece of music.</div></div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">10:30am</div><div class="ball"></div><div class="timel">11:00am</div></div>
+      <div class="four columns s-title family"><h4>Youth Kite Makers Practice Fly</h4>
+      <h5><img class="s-icon" src="images/family.svg" alt="icon">Family Field</h5></div>
+      <div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">The Kite Maker Competition is divided into youth (ages 11 and under) and (ages 12-15) and adults (ages 16 and above). For both youth categories, there will be a first, second and third place award.</div></div>
+      <hr class="sborder"/>
+  </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">11:00am</div><div class="ball"></div><div class="timel">1:00pm</div></div>
+      <div class="four columns s-title competition"><h4>Adult Kite Makers Competition</h4>
+      <h5><img class="s-icon" src="images/competition.svg" alt="icon">Competition Field</h5></div>
+      <div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">For the Kite Maker Competition there will be a first, second and third place award. For the adult category, there will be a Theme Award, People's Choice Award, and a Grand Prize.</div></div>
+      <hr class="sborder"/>
+    </div>
+     <div class="row event">
+      <div class="two columns s-time"><div class="timel">11:00am</div><div class="ball"></div><div class="timel">Noon</div></div>
+      <div class="four columns s-title family"><h4>Youth Kite Makers Competition</h4>
+      <h5><img class="s-icon" src="images/family.svg" alt="icon">Family Field</h5></div><div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">The Kite Maker Competition is divided into youth (ages 11 and under) and (ages 12-15) and adults (ages 16 and above). For both youth categories, there will be a first, second and third place award</div></div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">Noon</div><div class="ball"></div><div class="timel">12:30pm</div></div>
+      <div class="four columns s-title family"><h4>Youth Kite Makers Awards</h4>
+      <h5><img class="s-icon" src="images/family.svg" alt="icon">Family Field</h5></div>
+       <div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">The Kite Maker Competition is divided into youth (ages 11 and under) and (ages 12-15) and adults (ages 16 and above). For both youth categories, there will be a first, second and third place award</div></div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">12:30pm</div><div class="ball"></div><div class="timel">1:00pm</div></div>
+      <div class="four columns s-title family"><h4>Mini Rokkaku Practice</h4>
+      <h5><img class="s-icon" src="images/family.svg" alt="icon">Family Field</h5></div>
+      <div class="six columns s-description">
+        <p class="heading">Description &#9660;</p><div class="expand">
+        Displays of kite flying showmanship. The Rokkaku Battle features hexagonal-shaped fighter kites commonly flown in Japan and now in many other parts of the world. In the Battle, teams of kite fliers compete to “cut” or “ground” opposing kites.
+      </div></div>
+      <hr class="sborder"/>
+      </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">1:00pm</div><div class="ball"></div><div class="timel">1:30pm</div></div>
+      <div class="four columns s-title competition"><h4>Fly through the Ages Demo</h4>
+      <h5><img class="s-icon" src="images/competition.svg" alt="icon">Competition Field</h5></div>
+      <div class="six columns s-description">
+        <p class="heading">Description &#9660;</p><div class="expand">Free registration required, experienced kite makers enter kites with the theme of “Fly through the Ages”, showcasing cultural heritage, international kite traditions and international friendship.</div></div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">1:00pm</div><div class="ball"></div><div class="timel">1:30pm</div></div>
+      <div class="four columns s-title family"><h4>Mini Rokkaku Challenge <em>(ages 5–9)</em></h4>
+      <h5><img class="s-icon" src="images/family.svg" alt="icon">Family Field</h5></div>
+      <div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">
+        Displays of kite flying showmanship. The Rokkaku Battle features hexagonal-shaped fighter kites commonly flown in Japan and now in many other parts of the world. In the Battle, teams of kite fliers compete to “cut” or “ground” opposing kites.
+      </div></div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">1:30pm</div><div class="ball"></div><div class="timel">2:30pm</div></div>
+      <div class="four columns s-title competition"><h4>Hot Tricks Showdown</h4>
+      <h5><img class="s-icon" src="images/competition.svg" alt="icon">Competition Field</h5></div>
+      <div class="six columns s-description">
+        <p class="heading">Description &#9660;</p><div class="expand">The Hot Tricks Showdown is a competition in which multi-line kite fliers engage in a series of one-on-one competitions and maneuver their sport kites in amazing flight patterns during 30 seconds of music. The winners are selected by audience applause.</div></div>
+      <hr class="sborder"/>
+    </div>
+     <div class="row event">
+      <div class="two columns s-time"><div class="timel">1:30pm</div><div class="ball"></div><div class="timel">2:00pm</div></div>
+      <div class="four columns s-title family"><h4>Mini Rokkaku Challenge <em>(ages 10–15)</em></h4>
+      <h5><img class="s-icon" src="images/family.svg" alt="icon">Family Field</h5></div>
+      <div class="six columns s-description">
+        <p class="heading">Description &#9660;</p><div class="expand">
+        Displays of kite flying showmanship. The Rokkaku Battle features hexagonal-shaped fighter kites commonly flown in Japan and now in many other parts of the world. In the Battle, teams of kite fliers compete to “cut” or “ground” opposing kites.
+      </div></div>
+      <hr class="sborder"/>
+    </div>
+     <div class="row event">
+      <div class="two columns s-time"><div class="timel">2:00pm</div><div class="ball"></div><div class="timel">4:30pm</div></div>
+      <div class="four columns s-title family"><h4>Family Open Fly</h4>
+      <h5><img class="s-icon" src="images/family.svg" alt="icon">Family Field</h5></div>
+      <div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">
+       The public is welcome to take the stage and see what they got. Perhaps trying out tricks from earlier or just testing out the winds.</div>
+      </div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">2:30pm</div><div class="ball"></div><div class="timel">3:00pm</div></div>
+      <div class="four columns s-title competition"><h4>International Kite Demonstrations</h4>
+      <h5><img class="s-icon" src="images/competition.svg" alt="icon">Competition Field</h5></div>
+      <div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">
+        Here the international clubs will show their unique styles, craftmanship and routines. Make sure to bring your cameras for this event.</div>
+      </div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">3:00pm</div><div class="ball"></div><div class="timel">4:15pm</div></div>
+      <div class="four columns s-title competition"><h4>Rokkaku Battle</h4>
+      <h5><img class="s-icon" src="images/competition.svg" alt="icon">Competition Field</h5></div>
+      <div class="six columns s-description"><p class="heading">Description &#9660;</p><div class="expand">Displays of kite flying showmanship. The Rokkaku Battle features hexagonal-shaped fighter kites commonly flown in Japan and now in many other parts of the world. In the Battle, teams of kite fliers compete to “cut” or “ground” opposing kites.</div> </div>
+      <hr class="sborder"/>
+    </div>
+    <div class="row event">
+      <div class="two columns s-time"><div class="timel">4:15pm</div><div class="ball"></div><div class="timel">4:30pm</div></div>
+      <div class="four columns s-title competition"><h4>Kite Arch & Awards</h4>
+      <h5><img class="s-icon" src="images/competition.svg" alt="icon">Competition Field</h5></div>
+      <div class="six columns s-description">
+        <p class="heading">Description &#9660;</p><div class="expand">
+        The winners throughout the day will be announced. Along with a special presentation by the Chairman of the Smithsonians.</div>
+      </div>
+
+  </div>
+ </div>
+</div>
+<div class="wrapper footer_border">
+  <div class="container">
+    <div class="row">
+      <div class="twelve columns">
+      </div>
+    </div>
+  </div>
+</div>
+<div class="wrapper wrapper-footer">
+  <div class="container footer">
+    <div class="row">
+        <div class="three columns bottom_nav">
+          <h2>Learn about us</h2>
+          <ul>
+          <li><a href="index.html"><p>Home</p></a></li>
+          <li><a href="faq.html"><p>FAQ</p></a></li>
+          <li><a href="contact.html"><p>Contact</p></a></li>
+          </ul>
+        </div>
+        <div class="three columns bottom_nav">
+          <h2>Join us</h2>
+          <ul>
+          <li><a href="fly.html"><p>Fly</p></a></li>
+          <li><a href="schedule.html"><p>Schedule</p></a></li>
+          </ul>
+        </div>
+        <div class="three columns">
+          <h2>Connect with us</h2>
+          <ul>
+          <li><p class="phone">877.32.KITES</p></li>
+          <li><a href="#"><p>bloomingkites@gmail.com</p></a></li>
+        </ul>
+        </div>
+      <div class="three columns">
+        <div class="media">
+          <a class="follow_fb" href="https://facebook.com" target="_blank"></a>
+          <a class="follow_twit" href="https://twitter.com" target="_blank"></a>
+        </div>
+        </div>
+     </div>
+  </div>
+</div>
+
+<!-- Call plugin function to activate responsive nav ================= -->
+<script>
+      var navigation = responsiveNav(".nav-collapse", {
+        animate: true,                    // Boolean: Use CSS3 transitions, true or false
+        transition: 284,                  // Integer: Speed of the transition, in milliseconds
+        label: "Menu",                    // String: Label for the navigation toggle
+        insert: "after",                  // String: Insert the toggle before or after the navigation
+        customToggle: "",                 // Selector: Specify the ID of a custom toggle
+        closeOnNavClick: false,           // Boolean: Close the navigation when one of the links are clicked
+        openPos: "relative",              // String: Position of the opened nav, relative or static
+        navClass: "nav-collapse",         // String: Default CSS class. If changed, you need to edit the CSS too!
+        navActiveClass: "js-nav-active",  // String: Class that is added to <html> element when nav is active
+        jsClass: "js",                    // String: 'JS enabled' class which is added to <html> element
+        init: function(){},               // Function: Init callback
+        open: function(){},               // Function: Open callback
+        close: function(){}               // Function: Close callback
+      });
+</script><!-- end pugin call -->
+<!-- End Document
+  –––––––––––––––––––––––––––––––––––––––––––––––––– -->
+</body>
+</html>
